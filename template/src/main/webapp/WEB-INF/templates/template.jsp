@@ -30,18 +30,20 @@
 <script type="text/javascript" src="./media/js/jquery.pulsate.min.js"></script>
 <script type="text/javascript" src="./media/js/jquery.bootpag.min.js"></script>
 <script src="./media/js/app.js"></script>
+<script src="./media/js/libs/init-config.js"></script>
 <script>
 	$(function() {
 		App.init();
 	});
 </script>
+
 </head>
 <body class="page-header-fixed">
 <div id="template_header">
 <div class="navbar header navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
-			<a class="brand" href="index">Linux</a>
+			<a class="brand" href="index"><%=Config.APPLICATION%></a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li><a href="index"><b class="icon-home"></b>首页</a></li>

@@ -29,14 +29,14 @@ public class LoginController extends BaseController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String template(Model model) {
 		model.addAttribute("view", "/#login");
-		return "frontPage/template";
+		return "template";
 	}
 
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
 	public String index(Model model, String requestType) {
 		model.addAttribute("view", ParseUtil.Parse2Request(requestType));
 
-		return "frontPage/template";
+		return "template";
 	}
 
 }

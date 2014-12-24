@@ -24,7 +24,7 @@ public class SystemController extends BaseController {
 	@RequestMapping(value = "/system", method = RequestMethod.GET)
 	public String system(Model model, String requestType) {
 		model.addAttribute("view", ParseUtil.Parse2Request(requestType));
-		return "frontPage/template";
+		return "template";
 	}
 
 }
