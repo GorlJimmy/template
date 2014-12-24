@@ -988,8 +988,9 @@ Dashboard date range panel
 Footer
 ***/
 .footer {
-	padding: 8px 20px 5px 20px;
-	font-size: 12px;
+    position:fixed;
+    padding:0 8% 0 8%;
+    bottom:20px;
 }
 
 .footer:after, .footer:before {
@@ -5432,4 +5433,13 @@ Datatables Plugin(in v1.3)
 
 .padding-center {
 	padding: 1% 8% 0 8%;
+}
+
+.adv{
+    position:fixed;
+    right:0;
+    bottom:0;
+    border:1px solid red;
+    width:300px;
+    height:250px;
 }

@@ -18,6 +18,7 @@ public class Config {
 	}
 
 	public static final String PROJECT_NAME = props.getProperty("project_name");
+	public static final String COPY_RIGHT = props.getProperty("copy_right");
 	public static final String APPLICATION = props.getProperty("application");
 	public static final String LOGINURL = props.getProperty("loginURL");
 	public static final String INDEXURL = props.getProperty("indexURL");

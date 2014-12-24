@@ -1,10 +1,9 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=branch 'master' of https\://github.com/GorlJimmy/template
 eclipse.preferences.version=1
-<<<<<<< HEAD
 encoding//src/main/webapp/WEB-INF/templates/backPage/template.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/templates/contact_us.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/templates/frontPage/index.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/templates/frontPage/regist.jsp=UTF-8
-=======
-encoding//src/main/webapp/WEB-INF/templates/header.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/templates/template.jsp=UTF-8
->>>>>>> branch 'master' of https://github.com/GorlJimmy/template
 encoding/<project>=UTF-8

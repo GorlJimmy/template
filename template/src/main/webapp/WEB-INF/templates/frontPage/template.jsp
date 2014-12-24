@@ -11,7 +11,6 @@
 <link href="./media/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="./media/css/style-metro.css" rel="stylesheet" type="text/css" />
 <link href="./media/css/style.css" rel="stylesheet" type="text/css" />
-<link href="./media/css/style-responsive.css" rel="stylesheet"	type="text/css" />
 <link href="./media/css/uniform.default.css" rel="stylesheet" 	type="text/css" />
 <link href="./media/css/jquery.gritter.css" rel="stylesheet"	type="text/css" />
 <link rel="shortcut icon" href="./media/image/favicon.ico" />
@@ -31,11 +30,9 @@
 <script type="text/javascript" src="./media/js/jquery.pulsate.min.js"></script>
 <script type="text/javascript" src="./media/js/jquery.bootpag.min.js"></script>
 <script src="./media/js/app.js"></script>
-<script src="./media/js/ui-general.js"></script>
 <script>
 	$(function() {
 		App.init();
-		UIGeneral.init();
 	});
 </script>
 </head>
@@ -47,40 +44,40 @@
 			<a class="brand" href="index">Linux</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li><a href="/index.php"><b class="icon-home"></b>首页</a></li>
-					<li><a href="/controller/panel/handler.php?type=introduction"><b
+					<li><a href="index"><b class="icon-home"></b>首页</a></li>
+					<li><a href="index"><b
 							class="icon-comment"></b>课程简介</a></li>
-					<li><a href="/controller/panel/handler.php?type=project"><b
+					<li><a href="index"><b
 							class="icon-envelope"></b>项目信息</a></li>
-					<li><a href="/controller/panel/handler.php?type=notice"><b
+					<li><a href="index"><b
 							class="icon-bell"></b>课程通知</a></li>
-					<li><a href="/controller/panel/handler.php?type=article"><b
+					<li><a href="index"><b
 							class="icon-book"></b>相关文章</a></li>
-					<li><a href="/controller/panel/handler.php?type=download"><b
+					<li><a href="index"><b
 							class="icon-download"></b>资源下载</a></li>
 				</ul>
 				<ul class="nav pull-right">
 					<li class="divider-vertical"></li>
 
-					<li><a href="/controller/panel/handler.php?type=about"><b
+					<li><a href="system?requestType=about"><b
 							class="icon-bell"></b>关于我们</a></li>
-					<li><a href="/controller/panel/handler.php?type=contact"><b
+					<li><a href="system?requestType=contact"><b
 							class="icon-pencil"></b>联系我们</a></li>
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
-						href="/controller/user/userHandler.php?type=profile"><i
+						href="system?requestType=profile"><i
 							class="icon-cog"></i></a>
 						<ul class="dropdown-menu">
-							<li><a href="/controller/user/userHandler.php?type=profile"><i
+							<li><a href="index"><i
 									class="icon-user"></i> 个人信息</a></li>
-							<li><a href="/personal/page_calendar.html"><i
+							<li><a href="index"><i
 									class="icon-calendar"></i> 我的日历</a></li>
-							<li><a href="/personal/inbox.html"><i
+							<li><a href="index"><i
 									class="icon-envelope"></i> 新消息(3)</a></li>
 							<li><a href="#"><i class="icon-tasks"></i>我的任务</a></li>
 							<li class="divider"></li>
-							<li><a href="/controller/user/userHandler.php?type=lock"><i
+							<li><a href="index"><i
 									class="icon-lock"></i> 锁屏</a></li>
-							<li><a href="/controller/user/userHandler.php?type=logout"><i
+							<li><a href="index"><i
 									class="icon-remove-circle"></i> 注销登录</a></li>
 						</ul></li>
 				</ul>
@@ -92,5 +89,6 @@
 <div id="template_content" class="page-container row-fluid">
 <jsp:include page="${view}"></jsp:include>
 </div>
+<div class="footer"><%=Config.COPY_RIGHT%></div>
 </body>
 </html>
