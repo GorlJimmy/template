@@ -29,15 +29,19 @@
 		<property name="prefix" value="/WEB-INF/templates/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-
 	<context:component-scan base-package="org.linuxkernel.template.cv.*" />
 	<aop:aspectj-autoproxy />
 	<mvc:annotation-driven />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	<aop:config proxy-target-class="true" />
 	<!-- Execute once a day on 1:00 am , Seconds Minutes Hours DayofMonth Month 
-		DayofWeek <task:scheduled-tasks> <task:scheduled ref="clientrestController" 
-		method="updateCachedReport" cron="0 0 1 * * ?"/> <task:scheduled ref="limitRestController" 
-		method="refresh" cron="0 30 * * * ?"/> </task:scheduled-tasks> -->
+		DayofWeek 
+	<task:scheduled-tasks>
+		<task:scheduled ref="systemController" method="system"
+			cron="0 0 1 * * ?" />
+		<task:scheduled ref="systemController" method="system"
+			cron="0 30 * * * ?" />
+	</task:scheduled-tasks>
+	-->
 
 </beans>
