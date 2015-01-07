@@ -22,7 +22,7 @@
 	<bean id="conversionService"
 		class="org.springframework.context.support.ConversionServiceFactoryBean" />
 	<mvc:annotation-driven conversion-service="conversionService" />
-	<bean
+	<bean 
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass"
 			value="org.springframework.web.servlet.view.JstlView" />
